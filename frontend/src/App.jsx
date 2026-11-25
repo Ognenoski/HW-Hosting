@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 
 const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5005";
+console.log("API URL:", API_URL);
 
 function Section({ title, endpoint }) {
   const [data, setData] = useState([]);
